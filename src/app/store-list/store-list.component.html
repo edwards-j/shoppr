@@ -1,0 +1,8 @@
+<h1>My Stores</h1>
+<input type="text" [(ngModel)]="newStoreName">
+<button (click)="saveStore()">Add Store</button>
+
+<div *ngFor="let store of stores">
+    <a [routerLink]="['/stores', store]">{{store}}</a>
+    <button (click)="deleteStore(store)">Delete {{store}}</button>
+</div>

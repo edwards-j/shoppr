@@ -19,7 +19,6 @@ export class StoreListComponent implements OnInit {
 
   saveStore() {
     this.dataService.saveStore(this.newStoreName);
-
     this.getStores()
   }
 

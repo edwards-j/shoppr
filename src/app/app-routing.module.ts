@@ -5,7 +5,8 @@ import { ItemListComponent } from './item-list/item-list.component';
 
 const routes: Routes = [
   {path: 'stores', component: StoreListComponent},
-  {path: 'stores/:store', component: ItemListComponent}
+  {path: 'stores/:store', component: ItemListComponent},
+  {path: '', pathMatch: 'full', redirectTo: '/stores'}
 ];
 
 @NgModule({
